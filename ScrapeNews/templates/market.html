@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    {% for task in newss %}
+        {% if 'geo.tv' in task.newsUrl %}
+            <a href="{{task.newsUrl}}">
+                <div class="body-div1">
+                    <div class="pic1">
+                        <img src="{{task.newsImage}}" id="{{task.id}}">
+                    </div>
+                    <h3>{{task.newsTitle}}</h3>
+                </div>    
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+    
+
+{% endblock %}

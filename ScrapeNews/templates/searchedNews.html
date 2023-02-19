@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}News App{% endblock %}
+
+{% block body %}
+
+
+<h2 class="body-div0">
+    <button>
+        Searched News
+    </button>
+</h2>
+<div class="headwith-3divs">
+    {% for new in news %}
+        <a href="{{new.newsUrl}}">
+            <div class="body-div1">
+                <div class="pic1">
+                    <img src="{{new.newsImage}}" id="{{new.id}}">
+                </div>
+                <h3>{{new.newsTitle}}</h3>
+            </div>    
+        </a>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

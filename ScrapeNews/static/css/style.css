@@ -1,0 +1,318 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+.overall-div{
+   background-color: rgba(25, 25, 83, .05);
+   margin: auto;
+   /* border-radius: 20px; */
+}
+.top {
+   display: flex;
+   /* background-color: cornsilk; */
+   justify-content: space-between;
+   margin-right: auto;
+}
+
+.FUUAST-logo{
+   width: 70px;
+   height: 80px;
+   /* border: 2px solid black; */
+   margin: auto 20px;
+   float: left;
+}
+.NN-logo {
+   width: 330px;
+   height: 100px;
+   margin-right: 50px;
+   /* border: 2px solid black; */
+}
+
+.logo-caption{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #004D40;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   /* border: 2px solid blue; */
+   margin-top: 0px;
+}
+
+/* ....NAvBar... */
+nav {
+   background-color: rgb(25, 25, 83);
+   border-radius: 25px;
+}
+
+nav li {
+   float: left;
+   padding: 13px 20px;
+   list-style: none;
+}
+
+nav li a {
+   color: white;
+}
+
+nav li a:hover {
+   color: orange;
+}
+
+nav ul {
+   overflow: auto;
+   margin: 3px;
+}
+
+nav li a {
+   text-decoration: none;
+}
+
+.right {
+   float: right;
+   margin: 8px 25px 0px 0px
+}
+
+#sear{
+   border-radius: 10px;
+   margin-top: 0px;
+}
+.search-btn{
+   border-radius: 10px;
+}
+.search-icon{
+   width: 25px;
+   height: 25px;
+
+}
+
+#nav-toggle{
+   position: absolute;
+   top: -100px;
+}
+nav .hamburger{
+   display: none;
+   position: absolute;
+   left: 5%;
+   top: 22.75%;
+   z-index: 9;
+   transform: translateY(-50%);
+}
+nav .hamburger .line{
+   width: 30px;
+   height: 5px;
+   background-color: white;
+   margin: 5px;
+   border-radius: 3px;
+}
+
+@media screen and (max-width: 785px) {
+   nav li{
+       display: none;
+   }
+   nav .hamburger{
+       display: block;
+   }
+}
+
+.top-trending:hover {
+   color: white;
+   background-color: rgb(25, 25, 83);
+}
+.top-trending1{
+   font-weight: bold;
+   background-color: red;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   padding: 4px 8px;
+}
+.top-trending1:hover{
+   background-color: white;
+   color: red;
+}
+.trending{
+   margin: auto 50px;
+   padding: 10px;
+}
+.top-trending{
+   /* padding: 10px 15px; */
+   color: rgb(25, 25, 83);
+   background-color: white;
+   border-style: none;
+   font-weight: bold;
+   margin: 2px auto;
+}
+
+/* @media screen and (max-width:495px){
+   .set{
+        
+   }
+} */
+
+.main-slider-div{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.main-slider-img{
+    width: 80%;
+    height: 250px;
+}   
+hr{
+   width: 95%;
+   margin-top: 60px;
+}
+/* .body-div0{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 23%;
+    letter-spacing: 5px;
+} */
+.body-div0{
+   text-align: center;
+}
+.body-div0 button{
+   height: 50px;
+   width: 311px;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 5px;
+   font-size: 20px;
+}
+.body-div0 button:hover{
+   cursor: pointer;
+}
+.headwith-3divs{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ .body-div1, .body-div2, .body-div3,.body-div4{
+    width: 320px;
+    height: 270px;
+    border: 1px solid rgb(202, 202, 202);
+    margin: 30px auto 60px auto;
+    /* padding-left: 30px; */
+    font-size: 13px;
+ }
+ .pic1 img, .pic2 img, .pic3 img, .pic4 img{
+    width: 100%;
+    height: 200px;
+ }
+ .para1, .para2, .para3, .para4{
+    /* border: 2px solid green ;*/
+    height: 64px;
+ }
+ .para1{
+   word-break: break-all
+ }
+
+    /* .......mediaQuery is working perfectly...... */
+ @media screen and (max-width:550px){
+    .body-div1, .body-div2, .body-div3, .body-div4{
+        width: 100%;
+    }
+ }
+
+ .tailwith-3divs{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.left{
+   /* border: 2px solid brown; */
+   height: 300px;
+   margin-top: 38px;
+}
+ .tbody-div3{
+    width: 300px;
+    height: 200px;
+    /* box-shadow: 1px 2px 4px gray; */
+    /* border: 1px solid gray; */
+    border-left: 1px solid rgb(202, 202, 202);
+    margin-top: 60px;
+    padding-left: 40px;
+ }
+ .tbody-div1{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-left: 1px solid rgb(202, 202, 202);
+    /* box-shadow: 1px 2px 4px gray; */
+    margin-top: 12px;
+    padding-left: 15px;
+ }
+ .tbody-div2{
+    width: 400px;
+    height: 330px;
+    border-left: 1px solid rgb(202, 202, 202);
+    /* box-shadow: 1px 2px 6px gray; */
+    margin-top: 50px;
+    padding-left: 35px;
+ }
+ .img1 img, .img3 img{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid yellow; */
+ }
+ p{
+   margin-top: 0px;
+ }
+
+ .img2 img{
+    width: 100%;
+    height: 280px;
+    /* border: 2px solid yellow; */
+ }
+ 
+ .paragraph1,.paragraph3{
+    /* border: 2px solid green; */
+    height: 100px;
+    width: 70%;
+ }
+ .paragraph2{
+    /* border: 2px solid green; */
+    height: 40px;
+    width: 400px;
+ }
+ .follow-on-acc{
+   margin: 20px auto;
+   /* border: 2px solid green; */
+   width: 22%;
+ }
+.follow-on-acc img{
+   /* border: 2px solid black; */
+   width: 90px;
+   height: 90px;
+   border-radius: 70px;
+}
+
+.copyright{
+    background-color: rgb(153, 6, 6);;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+.btn-submit_news:hover{
+   cursor: pointer;
+}
+.btn_reload:hover{
+   cursor: pointer;
+}
