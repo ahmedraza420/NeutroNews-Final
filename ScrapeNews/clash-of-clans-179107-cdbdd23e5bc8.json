@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "clash-of-clans-179107",
+  "private_key_id": "cdbdd23e5bc8d2bfae2481853c549d19b0e98f5d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDO344yRnGy6mSJ\nk0uBx2/F2huB++zlrQYlFJHD1Im9VFqo02oFVZCWomwUCr0UGezmZwzu+iRXkUUN\n81kxqpHyBUmCPM/WsVjtZoRYgosE5Dlt6bAFIzoZWGlFQ4VWcy0X9eamsKWg1KBQ\nFjEIcjen1jzboPLyIPiZ7XSMgNB3sANbAGJp0DeD3Wjj2+pnG4WGWJIIbDwXzNB1\ndHZGAmWQeUnK4LGYuSDeaEL7POLEL1wOlIxDmnpIGtv6mQX+k7NShAQ+Ik8xYfOM\n+0cXT1oEG7Eo/wRp+y8P16fSNuUoOaUK/jQ6SVyoE24EMkpg55zY4a7L3p+Iwmsv\nZAL2+Pt/AgMBAAECggEAAv9HKqBNpmdx9HJPXj569pVd36i8Ommi1KezIvCx3C3c\nMGT7vL8MHLqWsUWkjqV/gqkMjWvPWftvUi/r42XSvnxoH7xs0HH6VVouYa/mfrgl\nwttnYvOrNFHNGKVNSb7acOXtpQ2bILTj67Uemb454zMd55qx2mMy5twDW8PEAW/j\nOWtMUehi+MwCvAe98EAk6kR2c0lj1Pfc5DYnX8QnwPNi7rOeYJaB3uxzJXhKfW9n\n233Bi6fa/CCWL26OpeWzFTkAg/l814/v4xPZYWs+faxMzCxKSib/KTVnZDC60HA7\n4dMJxiZTWEjc3KqjwmSbXEFSipk92bZ2xTHBtMecYQKBgQDn0fu6VKCT7E+0WOpQ\nuQtUfzpfbdHndW8izIiSj6vF8WoZALCt3PxhzGHSI5r8jxg3R1EgPdu8NbhMDQg7\nFOJ99GARv8k0UgyWrQfMC5hcERdJzGwjUCGZQvgf/rtlh0H8OrcmQnri218Xyxyi\nUU8MZlTZZGWBSJwGEnRAHtVc4QKBgQDkc3FhytnvCO59IC6tOqU+iEv5Pk11S8RO\nD6H94vOrUi5c2SMvwoJAPCIxPBTELMKs08UY3q1y/RDrUpsmuq92GLEG2xhP1qFo\ndt9FUeqDS+lzO2Mq2zjPTs92JBCYQNYkAx8f+0jh+fGihCwN94Bdhv3bfejjN5KD\n8Ptho1gEXwKBgQDc6yCgnnt03JPMg5uxF9czTBfdz3Nkx2YE3LQeL6p79aetchnt\nZpZhwPtL3kCaBOgH7f/i4PBhuTQLzbOVUj7R16wh3gopwTNb+ENg8X/d5S+zVYuM\nT5XlT4vUOdZuV+rLK01UubAQNwy1SQvdp+zUHUUo8uNExGRj6Pw+CuQ8IQKBgQCS\np+mpteeiJEG14esVGgjq0+Sx5OUk37btxetgaUm0OdW5lUuZZWzof7ITmVZbecCf\n4nMtPAZtQziRWT5w5netgLxkglJhLo//2BANGEFMeHctmnpXENSvgRB97zkYBMdz\n5u0cQtzO9P3CLsd5T+IAKKDfPz06YHqWaSV30Ly4UQKBgFhk2a7wXNmQNKl7Nvvw\n0OVGkIogFFDztCnO3Yr4/IDvIjsZlLFgNVY362X8ZtOkCmc4RKmkz7WjP53bqmlI\n0cUiXykMOiZ/x6l0zku86AuwNiuJ/Gz4Fyt1UpbGp7erRBjvkXr31uPrxZgYrXkH\nWLFYScjJa8MSr1wz9VgJ4Zky\n-----END PRIVATE KEY-----\n",
+  "client_email": "ahmedraza-gnlapi@clash-of-clans-179107.iam.gserviceaccount.com",
+  "client_id": "109117368156459398514",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ahmedraza-gnlapi%40clash-of-clans-179107.iam.gserviceaccount.com"
+}

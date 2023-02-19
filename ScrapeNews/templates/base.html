@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+        <div class="top">
+            <!-- <div class="FUUAST-div"> -->
+            <img class="FUUAST-logo" src="{{url_for('static', filename='/images/federal-urdu-university-logo.png')}}" alt="FUUAST logo">
+            <!-- </div> -->
+            <!-- <div class="NN-div"> -->
+            <img class="NN-logo" src="{{url_for('static', filename='/images/NNlogoFinal.png')}}" alt="NeutroNews">
+            .
+        </div>
+    
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="unor">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">LATEST NEWS</a></li>
+                <li><a href="#">PAKISTAN</a></li>
+                <li> <a href="#">POLITICS</a> </li>
+                <li> <a href="#">BUSINESS</a> </li>
+                <li> <a href="#">SPORTS</a> </li>
+                <div class="right">
+                    <form style="display: flex;" method="GET">
+                        <input type="text" name="news" placeholder="Search News.." style="padding: 0 0 0 5px; height: 30px; width: 230px;"/>
+                        <button type="submit" style="background: transparent; border: none;" class="btn-submit_news">
+                            <img class="search-icon" src="{{url_for('static', filename='/images/search-icon.png')}}" alt="search icon">
+                        </button>
+                    </form>
+                </div>
+            </ul>
+            <label for="nav-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    
+        <div class="trending" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="set">
+                <button class="top-trending1">TRENDING</button>
+                <button class="top-trending">DOLLAR PRICE</button>
+                <button class="top-trending">IMRAN KHAN</button>
+                <button class="top-trending">WEATHER</button>
+            </div>
+            <form action="/" method="POST">
+                <button type="submit" class="btn_reload" style="background: transparent; border: none;">
+                    <img style="width: 20px; height: 20px;" src="{{url_for('static', filename='images/reload-icon.png')}}" alt="reload-icon">
+                </button>    
+            </form>
+        </div>
+    {% block body %}{% endblock %}
+</body>
+</html>
