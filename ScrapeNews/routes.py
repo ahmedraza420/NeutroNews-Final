@@ -66,7 +66,7 @@ def index():
         # scrape_loop(samaaArticles)
         
 
-        samaaArticles = newspaper.build('https://www.samaaenglish.tv/', config=config)
+        samaaArticles = newspaper.build('https://www.samaaenglish.tv/latest-news', config=config)
         scrape_loop(samaaArticles)
 
         geoArticles = newspaper.build('https://www.geo.tv/latest-news')
