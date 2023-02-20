@@ -40,11 +40,17 @@ def scrape_loop(allarticles):
             Url = articles.url
 
             if 'urdu.arynews' in Url:
-                continue
+                print("urdu.arynews")
             if 'video.dunyanews' in Url:
-                continue
-            if 'videos-samaa' in Url:
-                continue
+                print("video.dunyanews")
+            if 'videos' in Url and 'samaa' in Url:
+                print("samaa.videos")
+            if "Don't Miss the Latest News Subscribing" in Text:
+                print("Aaj.text")
+            if "Subscribe to notifications Get the latest news" in Text:
+                print("samaa.text")
+
+
 
             try:
                 senti = get_sentiment(Text)['sentiment']
