@@ -39,6 +39,13 @@ def scrape_loop(allarticles):
             Image = articles.top_image
             Url = articles.url
 
+            if 'urdu.arynews' in Url:
+                continue
+            if 'video.dunyanews' in Url:
+                continue
+            if 'videos-samaa' in Url:
+                continue
+
             try:
                 senti = get_sentiment(Text)['sentiment']
             except:
