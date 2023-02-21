@@ -40,16 +40,15 @@ def scrape_loop(allarticles):
             Url = articles.url
 
             if 'urdu.arynews' in Url:
-                print("urdu.arynews")
+                continue
             if 'video.dunyanews' in Url:
-                print("video.dunyanews")
+                continue
             if 'videos' in Url and 'samaa' in Url:
-                print("samaa.videos")
+                continue
             if "Don't Miss the Latest News Subscribing" in Text:
-                print("Aaj.text")
+                continue
             if "Subscribe to notifications Get the latest news" in Text:
-                print("samaa.text")
-
+                continue
 
 
             try:
