@@ -43,9 +43,9 @@ def scrape_loop(allarticles):
                 continue
             if 'video.dunyanews' in Url:
                 continue
-            if 'videos' in Url and 'samaa' in Url:
+            if ('videos' in Url and 'samaa' in Url) or ('samaaenglish.tv/cricket' in Url or 'samaaenglish.tv/pakistan' in Url or 'samaaenglish.tv/money' in Url or 'samaaenglish.tv/sports' in Url or 'samaaenglish.tv/lifestyle' in Url or 'samaaenglish.tv/tech' in Url or 'samaaenglish.tv/global' in Url or 'samaaenglish.tv/health' in Url or 'samaaenglish.tv/tv-programs' in Url):
                 continue
-            if "Don't Miss the Latest News Subscribing" in Text:
+            if "Don't Miss the Latest News" in Text or 'aajenglish.tv/pakistan' in Url or 'aajenglish.tv/world' in Url or 'aajenglish.tv/business-economy' in Url or 'aajenglish.tv/sports' in Url or 'aajenglish.tv/life-style' in Url or 'aajenglish.tv/videos' in Url:
                 continue
             if "Subscribe to notifications Get the latest news" in Text:
                 continue
@@ -71,7 +71,7 @@ def scrape_loop(allarticles):
 def index():
     Title=""
     config = Config()
-    config.request_timeout = 120
+    config.request_timeout = 180
     if request.method == 'POST':
         db.create_all()
         # samaaArticles = newspaper.build('https://www.parhlo.com/viral/', config=config)
@@ -79,6 +79,7 @@ def index():
         
 
         samaaArticles = newspaper.build('https://www.samaaenglish.tv/latest-news', config=config)
+        print(samaaArticles)
         scrape_loop(samaaArticles)
 
         
