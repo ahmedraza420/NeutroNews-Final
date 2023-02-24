@@ -30,7 +30,7 @@ def scrape_loop(allarticles):
         try:
             articles.download()
             articles.parse()
-        
+            
             Text = articles.text
 
             if (not Text) or (Text.startswith("The news is by your side")): # Check if Text is empty
@@ -79,7 +79,7 @@ def index():
         
 
         samaaArticles = newspaper.build('https://www.samaaenglish.tv/latest-news', config=config)
-        print(samaaArticles)
+
         scrape_loop(samaaArticles)
 
         
