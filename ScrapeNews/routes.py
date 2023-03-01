@@ -8,7 +8,7 @@ from newspaper import Config
 import json, jsonpickle
 from ScrapeNews.ganalyzer import get_sentiment
 from ScrapeNews.gcategorize import classify_content
-from getarttime import gettime
+from ScrapeNews.getarttime import gettime
 newss=[]
 s=[]
 
@@ -62,7 +62,11 @@ def scrape_loop(allarticles):
             except:
                 category = "Others (undef)"
 
-            newArticle= UpToDateNews(newsTitle=Title, newsText=Text,newsImage=Image, newsUrl=Url, sentiment = senti, category = category)
+
+
+            pub_date = gettime(articles)
+
+            newArticle= UpToDateNews(newsTitle=Title, newsText=Text,newsImage=Image, newsUrl=Url, date_created = pub_date, sentiment = senti, category = category)
             db.session.add(newArticle)  
             db.session.commit()
         except:
